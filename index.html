@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crypto Return Calculator - Live Prices</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Crypto Return Calculator</h1>
+
+    <div class="form-group">
+      <label for="investment">Initial Investment ($):</label>
+      <input type="number" id="investment" min="1" placeholder="Enter amount in USD" />
+    </div>
+
+    <div class="form-group">
+      <label for="buyCoin">Buy Coin:</label>
+      <input type="text" id="buySearch" placeholder="Search buy coin..." autocomplete="off" />
+      <select id="buyCoin" size="6"></select>
+    </div>
+
+    <div class="form-group">
+      <label for="sellCoin">Sell Coin:</label>
+      <input type="text" id="sellSearch" placeholder="Search sell coin..." autocomplete="off" />
+      <select id="sellCoin" size="6"></select>
+    </div>
+
+    <button id="calculateBtn">Calculate Return</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
